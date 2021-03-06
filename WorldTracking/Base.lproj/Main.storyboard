@@ -19,14 +19,42 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="sceneView" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-PA-rc4">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kU-ve-zz5">
+                                <rect key="frame" x="20" y="636" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="duS-2P-wFF"/>
+                                    <constraint firstAttribute="height" constant="80" id="sxo-F5-fLb"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fcO-we-jMg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpb-I4-eBn">
+                                <rect key="frame" x="314" y="636" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="9pa-mf-ffV"/>
+                                    <constraint firstAttribute="height" constant="80" id="El7-gl-Zjn"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5X1-IM-zDu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KEQ-PA-rc4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="14S-zT-g5h"/>
                             <constraint firstItem="KEQ-PA-rc4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QVX-bf-JJa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gpb-I4-eBn" secondAttribute="bottom" constant="20" id="TUE-i6-vu6"/>
                             <constraint firstItem="KEQ-PA-rc4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Uoh-Af-qBz"/>
+                            <constraint firstItem="3kU-ve-zz5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="giy-sK-DdI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3kU-ve-zz5" secondAttribute="bottom" constant="20" id="ny3-ce-ZJn"/>
                             <constraint firstItem="KEQ-PA-rc4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pLv-jz-txg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gpb-I4-eBn" secondAttribute="trailing" constant="20" id="rCY-iF-V9d"/>
                         </constraints>
                     </view>
                     <connections>
@@ -40,6 +68,12 @@
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
